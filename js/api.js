@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000"; // adjust if needed
+const BASE_URL = "http://localhost:8000";
 
 async function login(username, password) {
     const res = await fetch(`${BASE_URL}/login`, {

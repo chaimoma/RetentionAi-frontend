@@ -18,12 +18,12 @@ document.getElementById("registerBtn").addEventListener("click", async () => {
         });
         if(!res.ok) throw await res.json();
         alertBox.style.display = "block";
-        alertBox.style.background = "#2ecc71"; // green for success
+        alertBox.style.background = "#2ecc71"; 
         alertBox.textContent = "Registration successful! Redirecting to login...";
         setTimeout(() => { window.location.href = "index.html"; }, 2000);
     } catch(err) {
         alertBox.style.display = "block";
-        alertBox.style.background = "#e74c3c"; // red for error
+        alertBox.style.background = "#e74c3c";
         alertBox.textContent = err.detail || "Registration failed";
     }
 });
